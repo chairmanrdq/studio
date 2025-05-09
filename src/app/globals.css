@@ -8,7 +8,7 @@ body {
 
 @layer base {
   :root {
-    /* Dark Tech Blue Theme */
+    /* Tech Blue Theme */
     --background: 215 30% 12%; /* Very dark desaturated blue */
     --foreground: 215 15% 88%; /* Light grey for text */
 
@@ -45,13 +45,13 @@ body {
     
     --radius: 0.5rem;
 
-    /* Sidebar for dark tech blue theme */
+    /* Sidebar for tech blue theme */
     --sidebar-background: 215 35% 9%; /* Very dark blue, slightly more saturated */
     --sidebar-foreground: 215 15% 85%; /* Light text for dark sidebar */
     --sidebar-primary: 210 90% 60%; /* Brighter Tech Blue for active items */
     --sidebar-primary-foreground: 210 20% 98%;
     --sidebar-accent: 215 25% 20%; /* Darker accent for hover on sidebar items */
-    --sidebar-accent-foreground: 210 90% 65%; /* Active/hover text color - lighter teal */
+    --sidebar-accent-foreground: 210 90% 65%; /* Active/hover text color - lighter blue */
     --sidebar-border: 215 20% 25%;
     --sidebar-ring: 210 90% 65%;
   }
