@@ -8,52 +8,52 @@ body {
 
 @layer base {
   :root {
-    /* Dynamic Visual Style */
-    --background: 210 20% 98%; /* Very light cool gray, almost white */
-    --foreground: 210 10% 23%; /* Dark cool gray for text */
+    /* Dark Tech Blue Theme */
+    --background: 215 30% 12%; /* Very dark desaturated blue */
+    --foreground: 215 15% 88%; /* Light grey for text */
 
-    --card: 0 0% 100%; /* Pure white for cards, to make them pop */
-    --card-foreground: 210 10% 23%; /* Dark text on cards */
+    --card: 215 30% 17%; /* Slightly lighter dark blue/grey than background */
+    --card-foreground: 215 15% 88%; /* Light grey text on cards */
 
-    --popover: 0 0% 100%; /* White popovers */
-    --popover-foreground: 210 10% 23%;
+    --popover: 215 30% 17%; /* Popover background */
+    --popover-foreground: 215 15% 88%; /* Popover text */
 
-    --primary: 175 70% 45%; /* Vibrant Teal */
-    --primary-foreground: 0 0% 100%; /* White, for text on primary elements */
+    --primary: 210 90% 55%; /* Vibrant Tech Blue */
+    --primary-foreground: 210 20% 98%; /* Very light, almost white for text on primary */
 
-    --secondary: 210 15% 90%; /* Lighter cool gray, for secondary elements */
-    --secondary-foreground: 210 10% 40%; /* Darker gray text on secondary */
+    --secondary: 215 25% 25%; /* Darker grey-blue for secondary elements */
+    --secondary-foreground: 215 15% 75%; /* Medium-light grey text on secondary */
 
-    --muted: 210 15% 95%; /* Very subtle cool gray for muted elements */
-    --muted-foreground: 210 10% 50%; /* Medium gray for muted text */
+    --muted: 215 20% 20%; /* Even darker/more subtle grey-blue for muted elements */
+    --muted-foreground: 215 10% 60%; /* Medium grey for muted text */
 
-    --accent: 15 90% 60%; /* Bright Orange/Coral for accent */
-    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --accent: 180 80% 50%; /* Cyan/Teal for accents (e.g., links) */
+    --accent-foreground: 210 20% 98%; /* Very light text on accent */
 
-    --destructive: 0 72% 51%; /* Standard red for errors */
-    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+    --destructive: 0 70% 60%; /* Brighter Red for errors on dark background */
+    --destructive-foreground: 0 0% 98%; /* White text on destructive */
 
-    --border: 210 15% 88%; /* Subtle cool gray border for cards/modules */
-    --input: 210 15% 94%; /* Light gray input fields */
-    --ring: 175 70% 55%; /* Slightly lighter/brighter primary for focus rings */
+    --border: 215 20% 22%; /* Subtle border color */
+    --input: 215 25% 28%; /* Input field background */
+    --ring: 210 90% 65%; /* Brighter blue for focus rings */
 
-    --chart-1: 175 70% 45%;  /* Primary - Vibrant Teal */
-    --chart-2: 15 90% 60%;   /* Accent - Bright Orange/Coral */
-    --chart-3: 200 75% 50%;  /* A complementary dynamic Blue */
-    --chart-4: 50 80% 55%;   /* A vibrant Yellow/Gold */
-    --chart-5: 300 65% 60%;  /* A dynamic Purple/Magenta */
+    --chart-1: 210 90% 60%;  /* Primary - Tech Blue */
+    --chart-2: 180 80% 55%;  /* Accent - Cyan/Teal */
+    --chart-3: 330 85% 70%;  /* Bright Pink/Magenta */
+    --chart-4: 45 100% 65%;   /* Bright Yellow/Orange */
+    --chart-5: 270 80% 75%;  /* Bright Purple */
     
     --radius: 0.5rem;
 
-    /* Sidebar for dynamic visual style */
-    --sidebar-background: 210 20% 20%; /* Dark cool gray */
-    --sidebar-foreground: 210 20% 88%; /* Light text for dark sidebar */
-    --sidebar-primary: 175 70% 55%; /* Brighter Teal for active items */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 20% 30%; /* Darker accent for hover on sidebar items */
-    --sidebar-accent-foreground: 175 70% 65%; /* Active/hover text color - lighter teal */
-    --sidebar-border: 210 15% 35%;
-    --sidebar-ring: 175 70% 60%;
+    /* Sidebar for dark tech blue theme */
+    --sidebar-background: 215 35% 9%; /* Very dark blue, slightly more saturated */
+    --sidebar-foreground: 215 15% 85%; /* Light text for dark sidebar */
+    --sidebar-primary: 210 90% 60%; /* Brighter Tech Blue for active items */
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 215 25% 20%; /* Darker accent for hover on sidebar items */
+    --sidebar-accent-foreground: 210 90% 65%; /* Active/hover text color - lighter teal */
+    --sidebar-border: 215 20% 25%;
+    --sidebar-ring: 210 90% 65%;
   }
 }
 
