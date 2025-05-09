@@ -8,50 +8,96 @@ body {
 
 @layer base {
   :root {
-    /* Tech Blue Theme */
-    --background: 215 30% 12%; /* Very dark desaturated blue */
-    --foreground: 215 15% 88%; /* Light grey for text */
+    /* Light Tech Blue Theme */
+    --background: 210 60% 97%; /* Very light blue */
+    --foreground: 215 25% 30%; /* Dark desaturated blue for text */
 
-    --card: 215 30% 17%; /* Slightly lighter dark blue/grey than background */
-    --card-foreground: 215 15% 88%; /* Light grey text on cards */
+    --card: 210 50% 99%; /* Almost white, slightly blueish */
+    --card-foreground: 215 25% 30%; /* Dark text on cards */
 
-    --popover: 215 30% 17%; /* Popover background */
-    --popover-foreground: 215 15% 88%; /* Popover text */
+    --popover: 210 50% 99%; /* Popover background - similar to card */
+    --popover-foreground: 215 25% 30%; /* Popover text */
 
-    --primary: 210 90% 55%; /* Vibrant Tech Blue */
-    --primary-foreground: 210 20% 98%; /* Very light, almost white for text on primary */
+    --primary: 210 90% 50%; /* Vibrant Tech Blue */
+    --primary-foreground: 210 30% 98%; /* Very light, almost white for text on primary */
 
-    --secondary: 215 25% 25%; /* Darker grey-blue for secondary elements */
-    --secondary-foreground: 215 15% 75%; /* Medium-light grey text on secondary */
+    --secondary: 210 40% 90%; /* Light grey-blue for secondary elements */
+    --secondary-foreground: 215 20% 45%; /* Medium-dark grey text on secondary */
 
-    --muted: 215 20% 20%; /* Even darker/more subtle grey-blue for muted elements */
-    --muted-foreground: 215 10% 60%; /* Medium grey for muted text */
+    --muted: 210 30% 94%; /* Lighter/more subtle grey-blue for muted elements */
+    --muted-foreground: 215 15% 55%; /* Medium grey for muted text */
 
-    --accent: 180 80% 50%; /* Cyan/Teal for accents (e.g., links) */
-    --accent-foreground: 210 20% 98%; /* Very light text on accent */
+    --accent: 200 80% 55%; /* Cyan-ish blue for accents (e.g., links) */
+    --accent-foreground: 210 30% 98%; /* Very light text on accent */
 
-    --destructive: 0 70% 60%; /* Brighter Red for errors on dark background */
+    --destructive: 0 70% 55%; /* Red for errors, good contrast on light bg */
     --destructive-foreground: 0 0% 98%; /* White text on destructive */
 
-    --border: 215 20% 22%; /* Subtle border color */
-    --input: 215 25% 28%; /* Input field background */
-    --ring: 210 90% 65%; /* Brighter blue for focus rings */
+    --border: 210 30% 85%; /* Subtle border color */
+    --input: 210 40% 95%; /* Input field background - light */
+    --ring: 210 90% 60%; /* Brighter blue for focus rings */
 
-    --chart-1: 210 90% 60%;  /* Primary - Tech Blue */
-    --chart-2: 180 80% 55%;  /* Accent - Cyan/Teal */
-    --chart-3: 330 85% 70%;  /* Bright Pink/Magenta */
-    --chart-4: 45 100% 65%;   /* Bright Yellow/Orange */
-    --chart-5: 270 80% 75%;  /* Bright Purple */
+    --chart-1: 210 90% 50%;  /* Primary - Tech Blue */
+    --chart-2: 200 80% 55%;  /* Accent - Cyan-ish Blue */
+    --chart-3: 330 80% 65%;  /* Bright Pink/Magenta (adjusted for light theme) */
+    --chart-4: 45 95% 60%;   /* Bright Yellow/Orange (adjusted for light theme) */
+    --chart-5: 270 75% 70%;  /* Bright Purple (adjusted for light theme) */
     
     --radius: 0.5rem;
 
-    /* Sidebar for tech blue theme */
-    --sidebar-background: 215 35% 9%; /* Very dark blue, slightly more saturated */
-    --sidebar-foreground: 215 15% 85%; /* Light text for dark sidebar */
-    --sidebar-primary: 210 90% 60%; /* Brighter Tech Blue for active items */
+    /* Sidebar for light tech blue theme */
+    --sidebar-background: 210 50% 94%; /* Light blue, slightly distinct from main bg */
+    --sidebar-foreground: 215 25% 35%; /* Dark text for light sidebar */
+    --sidebar-primary: 210 90% 50%; /* Tech Blue for active items */
+    --sidebar-primary-foreground: 210 30% 98%;
+    --sidebar-accent: 210 40% 88%; /* Lighter accent for hover on sidebar items */
+    --sidebar-accent-foreground: 210 90% 45%; /* Active/hover text color - darker blue */
+    --sidebar-border: 210 30% 80%;
+    --sidebar-ring: 210 90% 60%;
+  }
+
+  .dark {
+    /* Dark Tech Blue Theme (Original or a different dark variant if needed) */
+    --background: 215 30% 12%; 
+    --foreground: 215 15% 88%; 
+
+    --card: 215 30% 17%; 
+    --card-foreground: 215 15% 88%;
+
+    --popover: 215 30% 17%; 
+    --popover-foreground: 215 15% 88%;
+
+    --primary: 210 90% 55%; 
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 215 25% 25%; 
+    --secondary-foreground: 215 15% 75%;
+
+    --muted: 215 20% 20%; 
+    --muted-foreground: 215 10% 60%;
+
+    --accent: 180 80% 50%; 
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 70% 60%; 
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 22%; 
+    --input: 215 25% 28%; 
+    --ring: 210 90% 65%; 
+    
+    --chart-1: 210 90% 60%;
+    --chart-2: 180 80% 55%;
+    --chart-3: 330 85% 70%;
+    --chart-4: 45 100% 65%;
+    --chart-5: 270 80% 75%;
+
+    --sidebar-background: 215 35% 9%; 
+    --sidebar-foreground: 215 15% 85%; 
+    --sidebar-primary: 210 90% 60%; 
     --sidebar-primary-foreground: 210 20% 98%;
-    --sidebar-accent: 215 25% 20%; /* Darker accent for hover on sidebar items */
-    --sidebar-accent-foreground: 210 90% 65%; /* Active/hover text color - lighter blue */
+    --sidebar-accent: 215 25% 20%; 
+    --sidebar-accent-foreground: 210 90% 65%; 
     --sidebar-border: 215 20% 25%;
     --sidebar-ring: 210 90% 65%;
   }
