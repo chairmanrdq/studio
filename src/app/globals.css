@@ -12,8 +12,8 @@ body {
     --background: 210 60% 97%; /* Very light blue */
     --foreground: 215 25% 30%; /* Dark desaturated blue for text */
 
-    --gradient-start-color: 210 70% 95%; /* Slightly more saturated and a tad darker light blue */
-    --gradient-end-color: 210 30% 98%;   /* Very light greyish blue, for a subtle fade */
+    --gradient-start-color: 210 80% 92%; /* More saturated and slightly darker light blue for stronger contrast */
+    --gradient-end-color: 210 20% 99%;   /* Even lighter, almost pure white-blue, for stronger contrast */
 
     --card: 210 50% 99%; /* Almost white, slightly blueish */
     --card-foreground: 215 25% 30%; /* Dark text on cards */
@@ -64,8 +64,8 @@ body {
     --background: 215 30% 12%; 
     --foreground: 215 15% 88%; 
 
-    --gradient-start-color: 215 35% 15%; /* Slightly lighter/more saturated dark blue */
-    --gradient-end-color: 220 40% 5%;    /* Even darker, almost black-blue for more contrast */
+    --gradient-start-color: 215 40% 18%; /* Slightly more saturated and lighter dark blue for stronger contrast */
+    --gradient-end-color: 220 45% 3%;    /* Even darker, almost black-blue for stronger contrast */
 
     --card: 215 30% 17%; 
     --card-foreground: 215 15% 88%;
@@ -144,4 +144,5 @@ body {
 .separator-with-icon svg {
   @apply mx-2 h-5 w-5 text-accent; /* Icons in separator use accent color */
 }
+
 
