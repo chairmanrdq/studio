@@ -1,8 +1,10 @@
+
 import { SectionTitle } from "@/components/ui/section-title";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, Users, BookOpenCheck, Github, Database, Presentation } from 'lucide-react';
+import { Download, ExternalLink, Users, BookOpenCheck, Github, Database, Presentation, Globe } from 'lucide-react';
 import type { Metadata } from 'next';
+import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
   title: 'Resources & Links',

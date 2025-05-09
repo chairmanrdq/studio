@@ -1,8 +1,10 @@
+
 import { SectionTitle } from "@/components/ui/section-title";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Building, DollarSign, CalendarDays, Target } from 'lucide-react';
 import type { Metadata } from 'next';
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: 'Projects & Grants',
