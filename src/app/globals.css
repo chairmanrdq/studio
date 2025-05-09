@@ -8,105 +8,109 @@ body {
 
 @layer base {
   :root {
-    /* Dark Blue & Green Theme - Default (effectively "light" mode in CSS, but it's a dark theme) */
-    --background: 220 40% 12%; /* Deep Navy Blue */
-    --foreground: 210 20% 88%; /* Light Bluish Gray for text */
+    /* Professional White, Deep Blue, Wine Red Theme - Light Mode */
+    --background: 0 0% 100%; /* Pure White #FFFFFF */
+    --foreground: 0 0% 20%; /* Deep Gray #333333 for text */
 
-    --gradient-start-color: 220 40% 10%; /* Slightly darker Deep Navy Blue - top */
-    --gradient-end-color: 190 50% 15%;   /* Dark Tealish Blue - bottom */
+    --gradient-start-color: 0 0% 100%; /* Pure White */
+    --gradient-end-color: 0 0% 98%;   /* Very Light Gray for subtle gradient */
 
-    --card: 220 35% 18%; /* Dark Slate Blue */
-    --card-foreground: 210 20% 88%; /* Light Bluish Gray */
+    --card: 0 0% 97%; /* Slightly Off-White to distinguish from pure white bg */
+    --card-foreground: 0 0% 20%; /* Deep Gray */
 
-    --popover: 220 35% 16%; /* Slightly darker popover */
-    --popover-foreground: 210 20% 88%;
+    --popover: 0 0% 100%; /* Pure White */
+    --popover-foreground: 0 0% 20%; /* Deep Gray */
 
-    --primary: 205 70% 50%; /* Bright Electric Blue */
+    --primary: 220 87% 31%; /* Deep Blue #0B3D91 - for links, important titles */
     --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 215 30% 25%; /* Muted Dark Blue */
-    --secondary-foreground: 210 15% 75%; /* Light Gray-Blue */
+    --secondary: 220 20% 92%; /* Very Light Blue/Gray */
+    --secondary-foreground: 0 0% 25%; /* Darker Gray for text on light secondary */
 
-    --muted: 215 25% 20%; /* Darker Muted Blue */
-    --muted-foreground: 210 15% 60%; /* Medium Gray-Blue */
+    --muted: 0 0% 94%; /* Light Gray for muted backgrounds */
+    --muted-foreground: 0 0% 40%; /* Light Gray #666666 for secondary text */
 
-    --accent: 150 65% 50%; /* Vibrant Green */
-    --accent-foreground: 0 0% 100%; /* White for text on accent */
+    --accent: 354 68% 56%; /* Wine Red #E63946 - for slight emphasis, button hovers */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 0 70% 55%; /* Standard vivid red for errors */
+    --destructive: 0 84% 60%; /* Standard vivid red for errors */
     --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
-    --border: 215 20% 30%; /* Subtle Dark Blue Border */
-    --input: 215 30% 22%; /* Input field background - dark blue */
-    --ring: 150 65% 55%; /* Green for focus rings */
+    --border: 0 0% 88%; /* Light Gray Separator #E0E0E0 */
+    --input: 0 0% 100%; /* White, with border */
+    --ring: 220 87% 45%; /* Lighter Deep Blue for focus rings */
 
-    --chart-1: 150 65% 50%;  /* Accent Green */
-    --chart-2: 205 70% 50%;  /* Primary Blue */
-    --chart-3: 170 60% 45%;  /* Teal */
-    --chart-4: 130 50% 60%;  /* Lighter Green */
-    --chart-5: 210 10% 60%;  /* Medium Gray-Blue */
+    --link-hover: 219 72% 52%; /* Light Blue #1D5ACC for link hover */
+
+    --chart-1: 220 87% 31%;  /* Primary Deep Blue */
+    --chart-2: 354 68% 56%;  /* Accent Wine Red */
+    --chart-3: 219 72% 52%;  /* Light Blue (link hover color) */
+    --chart-4: 220 60% 50%;  /* Medium Blue */
+    --chart-5: 0 0% 60%;     /* Medium Gray */
     
     --radius: 0.5rem;
 
-    /* Sidebar for Dark Blue & Green theme */
-    --sidebar-background: 220 30% 10%; /* Very Dark Blue for sidebar */
-    --sidebar-foreground: 210 20% 80%; /* Light Bluish Gray */
-    --sidebar-primary: 150 65% 50%; /* Accent Green for active items */
+    /* Sidebar for Light Theme */
+    --sidebar-background: 0 0% 96%; /* Light Gray, slightly darker than card */
+    --sidebar-foreground: 0 0% 20%; /* Deep Gray */
+    --sidebar-primary: 220 87% 31%; /* Deep Blue for active items */
     --sidebar-primary-foreground: 0 0% 100%; /* White */
-    --sidebar-accent: 215 30% 20%; /* Muted Dark Blue for hover on sidebar items */
-    --sidebar-accent-foreground: 150 60% 65%; /* Lighter Green for active/hover text */
-    --sidebar-border: 215 20% 25%; /* Dark Blue border for sidebar */
-    --sidebar-ring: 150 65% 60%; /* Green ring for sidebar */
+    --sidebar-accent: 0 0% 90%; /* Hover bg for sidebar items - darker gray */
+    --sidebar-accent-foreground: 220 87% 31%; /* Deep Blue for active/hover text */
+    --sidebar-border: 0 0% 88%; /* Light Gray Separator */
+    --sidebar-ring: 220 87% 45%; /* Lighter Deep Blue for focus rings */
   }
 
   .dark {
-    /* Dark Blue & Green Theme - Dark variation */
-    --background: 220 50% 8%; /* Very Dark Indigo */
-    --foreground: 210 25% 92%; /* Brighter Off-White/Bluish */
+    /* Dark Theme variation */
+    --background: 220 15% 10%; /* Dark Blue-Gray */
+    --foreground: 0 0% 95%; /* Off-White */
 
-    --gradient-start-color: 220 50% 6%;    /* Even darker Indigo - top */
-    --gradient-end-color: 190 60% 10%;   /* Darker Tealish Indigo - bottom */
+    --gradient-start-color: 220 15% 8%;
+    --gradient-end-color: 220 15% 12%;
 
-    --card: 220 40% 14%; /* Darker Slate Blue */
-    --card-foreground: 210 25% 92%;
+    --card: 220 15% 15%; /* Darker Blue-Gray */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 40% 12%; 
-    --popover-foreground: 210 25% 92%;
+    --popover: 220 15% 12%; 
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 205 75% 58%; /* Slightly Brighter Electric Blue */
-    --primary-foreground: 0 0% 100%; 
+    --primary: 220 87% 60%; /* Brighter Deep Blue */
+    --primary-foreground: 0 0% 10%; /* Dark text for contrast */
 
-    --secondary: 215 35% 22%; /* Darker Muted Blue */
-    --secondary-foreground: 210 20% 80%;
+    --secondary: 220 15% 25%; /* Muted Dark Blue/Gray */
+    --secondary-foreground: 0 0% 80%;
 
-    --muted: 215 30% 18%; /* Even Darker Muted Blue */
-    --muted-foreground: 210 15% 65%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 60%; /* Lighter Gray text */
 
-    --accent: 150 70% 55%; /* Brighter Vibrant Green */
-    --accent-foreground: 0 0% 100%; 
+    --accent: 354 68% 70%; /* Brighter Wine Red */
+    --accent-foreground: 0 0% 10%; /* Dark text for contrast */
 
-    --destructive: 0 75% 60%; /* Brighter red for dark mode */
+    --destructive: 0 75% 65%; /* Brighter red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 28%; /* Darker Blue Border */
-    --input: 215 35% 20%; /* Darker Input Background */
-    --ring: 150 70% 60%; 
-    
-    --chart-1: 150 70% 55%;  /* Accent Green - Dark mode */
-    --chart-2: 205 75% 58%;  /* Primary Blue - Dark mode */
-    --chart-3: 170 65% 50%;  /* Brighter Teal */
-    --chart-4: 130 55% 65%;  /* Brighter Light Green */
-    --chart-5: 210 15% 70%;  /* Lighter Gray-Blue */
+    --border: 220 15% 30%;
+    --input: 220 15% 20%;
+    --ring: 220 87% 65%; 
 
-    /* Sidebar for Dark Blue & Green theme - Dark variation */
-    --sidebar-background: 220 40% 6%; /* Almost Black-Blue for sidebar */
-    --sidebar-foreground: 210 20% 88%; 
-    --sidebar-primary: 150 70% 55%; /* Accent Green for active items */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 30% 15%; /* Darker accent for hover on sidebar items */
-    --sidebar-accent-foreground: 150 65% 70%; /* Brighter Lighter Green for active/hover text */
-    --sidebar-border: 215 20% 20%;
-    --sidebar-ring: 150 70% 65%;
+    --link-hover: 219 72% 70%; /* Brighter Light Blue for link hover */
+    
+    --chart-1: 220 87% 60%;
+    --chart-2: 354 68% 70%;
+    --chart-3: 219 72% 70%;
+    --chart-4: 220 60% 75%;
+    --chart-5: 0 0% 70%;
+
+    /* Sidebar for Dark Theme */
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 220 87% 60%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 220 87% 60%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 220 87% 65%;
   }
 }
 
@@ -128,8 +132,8 @@ body {
   h2 { @apply text-3xl; }
   h3 { @apply text-2xl; }
   h4 { @apply text-xl; }
-  /* Links use accent color by default */
-  a:not(.no-style) { @apply text-accent hover:text-accent/80 transition-colors duration-200; }
+  /* Links use primary color and custom hover color */
+  a:not(.no-style) { @apply text-primary hover:text-[hsl(var(--link-hover))] transition-colors duration-200; }
 }
 
 /* Custom separator with icon */
@@ -139,9 +143,9 @@ body {
 
 .separator-with-icon::before,
 .separator-with-icon::after {
-  @apply content-[''] flex-grow border-t border-border; /* Uses the updated --border */
+  @apply content-[''] flex-grow border-t border-border;
 }
 
 .separator-with-icon svg {
-  @apply mx-2 h-5 w-5 text-accent; /* Icons in separator use accent color */
+  @apply mx-2 h-5 w-5 text-primary; /* Icons in separator use primary color */
 }
