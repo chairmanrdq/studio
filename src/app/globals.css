@@ -8,52 +8,6 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 98%; /* Near White */
-    --foreground: 220 10% 20%; /* Very Dark Blue/Black */
-
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 220 10% 20%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 10% 20%;
-
-    --primary: 205 80% 50%; /* Strong Tech Blue */
-    --primary-foreground: 0 0% 100%; /* White */
-
-    --secondary: 220 20% 94%; /* Light Cool Gray */
-    --secondary-foreground: 220 10% 35%; /* Darker Gray for text on secondary */
-
-    --muted: 220 20% 90%; /* Slightly darker Light Gray */
-    --muted-foreground: 220 10% 50%; /* Muted text color */
-
-    --accent: 290 60% 55%; /* Desaturated Purple/Magenta for light theme */
-    --accent-foreground: 0 0% 100%; /* White for contrast */
-
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 220 15% 88%; /* Light Gray Border */
-    --input: 220 20% 96%; /* Very Light Gray for inputs */
-    --ring: 205 80% 60%; /* Brighter primary for focus rings */
-
-    --chart-1: 205 80% 50%;  /* Primary Blue */
-    --chart-2: 290 60% 55%;   /* Accent Purple */
-    --chart-3: 170 60% 40%;  /* Teal/Cyan */
-    --chart-4: 350 70% 55%;    /* Bright Pinkish Red */
-    --chart-5: 50 80% 50%;  /* Bright Orange/Yellow */
-    --radius: 0.5rem;
-
-    --sidebar-background: 220 25% 96%; /* Very light cool gray */
-    --sidebar-foreground: 220 10% 20%;
-    --sidebar-primary: 205 80% 50%; 
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 90%; /* Light gray accent for hover */
-    --sidebar-accent-foreground: 205 80% 45%; /* Darker blue for active */
-    --sidebar-border: 220 15% 85%;
-    --sidebar-ring: 205 80% 60%;
-  }
-
-  .dark {
     --background: 220 25% 10%; /* Very Dark Blue */
     --foreground: 210 30% 85%; /* Light Bluish Gray */
 
@@ -87,6 +41,7 @@ body {
     --chart-3: 170 70% 45%;  /* Teal/Cyan */
     --chart-4: 350 80% 60%;    /* Bright Pinkish Red */
     --chart-5: 50 90% 55%;  /* Bright Orange/Yellow */
+    --radius: 0.5rem;
 
     --sidebar-background: 220 20% 12%; /* Very Dark, slightly different from main bg */
     --sidebar-foreground: 210 30% 80%;
