@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { SectionTitle } from "@/components/ui/section-title";
 import { Mail, Phone, Link as LinkIcon, MapPin, Award, Rss, BookOpen } from 'lucide-react'; // Changed Megaphone to Rss for news
+import ImageCarousel from '@/components/home/image-carousel'; // Added import for ImageCarousel
 
 // Mock Data - replace with actual data source
 const scholarData = {
@@ -34,6 +35,14 @@ const scholarData = {
     { id: 3, date: "2024-05-20", title: "Recruiting PhD Students for Fall 2025", description: "Looking for passionate students in NLP and ML. See details on the Research page.", icon: <Rss className="h-5 w-5 text-accent flex-shrink-0" /> },
   ],
 };
+
+// Data for the carousel
+const carouselImages = [
+  { src: "https://picsum.photos/seed/carouselA/1200/500", alt: "Modern Research Facility", dataAiHint: "modern laboratory" },
+  { src: "https://picsum.photos/seed/carouselB/1200/500", alt: "AI Neural Network Visualization", dataAiHint: "neural network" },
+  { src: "https://picsum.photos/seed/carouselC/1200/500", alt: "Collaborative Team Working", dataAiHint: "team collaboration" },
+  { src: "https://picsum.photos/seed/carouselD/1200/500", alt: "Advanced Computing Infrastructure", dataAiHint: "server room" },
+];
 
 export default function Home() {
   return (
@@ -129,6 +138,12 @@ export default function Home() {
             </Card>
           ))}
         </div>
+      </section>
+
+      {/* Image Carousel Section */}
+      <section id="image-carousel" aria-labelledby="carousel-title" className="mt-12 md:mt-16">
+        <SectionTitle id="carousel-title">Visual Highlights</SectionTitle>
+        <ImageCarousel images={carouselImages} interval={5000} />
       </section>
     </div>
   );
