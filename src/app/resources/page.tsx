@@ -88,7 +88,7 @@ export default function ResourcesPage() {
             <ResourceCard 
               key={item.id} 
               item={item} 
-              buttonClassName="bg-[hsl(var(--chart-4))] text-card-foreground hover:bg-[hsl(var(--chart-4))]/90" 
+              buttonClassName="bg-[hsl(var(--chart-3))] text-primary-foreground hover:bg-[hsl(var(--chart-3))]/90" 
             />
           ))}
         </div>
