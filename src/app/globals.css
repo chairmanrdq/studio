@@ -8,49 +8,52 @@ body {
 
 @layer base {
   :root {
-    --background: 220 25% 10%; /* Very Dark Blue */
-    --foreground: 210 30% 85%; /* Light Bluish Gray */
+    /* Tech Blue Theme with Large White Spaces */
+    --background: 220 20% 97%; /* Very light cool gray, almost white for "large white spaces" */
+    --foreground: 220 10% 25%; /* Dark cool gray for text */
 
-    --card: 220 20% 15%; /* Darker Blue-Gray for cards */
-    --card-foreground: 210 30% 85%;
+    --card: 0 0% 100%; /* Pure white for cards, to make them pop */
+    --card-foreground: 220 10% 25%; /* Dark text on cards */
 
-    --popover: 220 20% 12%; /* Even darker for popovers */
-    --popover-foreground: 210 30% 85%;
+    --popover: 0 0% 100%; /* White popovers */
+    --popover-foreground: 220 10% 25%;
 
-    --primary: 205 90% 55%; /* Vibrant Cyan-Blue - "Tech Blue" */
-    --primary-foreground: 210 20% 98%; /* Almost White */
+    --primary: 217 91% 58%; /* Vibrant "Tech Blue" (e.g., #3B82F6) */
+    --primary-foreground: 210 20% 98%; /* Almost White, for text on primary elements */
 
-    --secondary: 220 15% 25%; /* Muted Dark Blue */
-    --secondary-foreground: 210 25% 70%; /* Lighter Gray for text on secondary */
+    --secondary: 220 15% 90%; /* Lighter cool gray, for secondary elements */
+    --secondary-foreground: 220 10% 40%; /* Darker gray text on secondary */
 
-    --muted: 220 15% 20%; /* Darker Muted */
-    --muted-foreground: 210 20% 55%; /* Medium Gray for muted text */
+    --muted: 220 15% 94%; /* Very subtle cool gray for muted elements */
+    --muted-foreground: 220 10% 55%; /* Medium gray for muted text */
 
-    --accent: 290 70% 60%; /* Vibrant Purple/Magenta as accent */
-    --accent-foreground: 0 0% 100%; /* White for contrast on accent */
+    --accent: 180 80% 45%; /* Bright Cyan for accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    --destructive: 0 70% 55%; 
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%; /* Standard red for errors */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
-    --border: 220 15% 28%; /* Subtle Dark Border */
-    --input: 220 15% 22%; 
-    --ring: 205 90% 65%; /* Brighter primary for focus rings */
+    --border: 220 15% 88%; /* Subtle cool gray border for cards/modules */
+    --input: 0 0% 100%; /* White input fields with a border (defined by .border-input) */
+    --ring: 217 91% 65%; /* Slightly lighter primary for focus rings */
 
-    --chart-1: 205 90% 55%;  /* Primary Blue */
-    --chart-2: 290 70% 60%;   /* Accent Purple */
-    --chart-3: 170 70% 45%;  /* Teal/Cyan */
-    --chart-4: 350 80% 60%;    /* Bright Pinkish Red */
-    --chart-5: 50 90% 55%;  /* Bright Orange/Yellow */
+    --chart-1: 217 91% 58%;  /* Primary - Tech Blue */
+    --chart-2: 180 80% 45%;  /* Accent - Cyan */
+    --chart-3: 240 70% 65%;  /* A medium Indigo/Purple */
+    --chart-4: 160 70% 40%;  /* A Teal/Green */
+    --chart-5: 280 60% 60%;  /* A Magenta/Purple */
+    
     --radius: 0.5rem;
 
-    --sidebar-background: 220 20% 12%; /* Very Dark, slightly different from main bg */
-    --sidebar-foreground: 210 30% 80%;
-    --sidebar-primary: 205 90% 55%; 
-    --sidebar-primary-foreground: 210 20% 98%;
-    --sidebar-accent: 220 15% 25%; /* Subtle dark accent for hover */
-    --sidebar-accent-foreground: 290 70% 65%; /* Brighter accent for active */
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 205 90% 65%;
+    /* Dark Sidebar for contrast and modularity */
+    --sidebar-background: 220 25% 15%; /* Dark Blue-Gray */
+    --sidebar-foreground: 210 30% 85%; /* Light text for dark sidebar */
+    --sidebar-primary: 217 91% 65%; /* Brighter Tech Blue for active items */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 25%; /* Darker accent for hover on sidebar items */
+    --sidebar-accent-foreground: 217 91% 75%; /* Active/hover text color - lighter tech blue */
+    --sidebar-border: 220 15% 28%;
+    --sidebar-ring: 217 91% 70%;
   }
 }
 
@@ -68,11 +71,8 @@ body {
   h2 { @apply text-3xl; }
   h3 { @apply text-2xl; }
   h4 { @apply text-xl; }
+  /* Links use accent color by default */
   a:not(.no-style) { @apply text-accent hover:text-accent/80 transition-colors duration-200; }
-  /* For buttons that are links, we might want default button styling or link styling.
-     If a button component is used as a link, it will take button styles.
-     If an <a> tag is used, it will take this accent color by default.
-  */
 }
 
 /* Custom separator with icon */
@@ -82,9 +82,9 @@ body {
 
 .separator-with-icon::before,
 .separator-with-icon::after {
-  @apply content-[''] flex-grow border-t border-border;
+  @apply content-[''] flex-grow border-t border-border; /* Uses the updated --border */
 }
 
 .separator-with-icon svg {
-  @apply mx-2 h-5 w-5 text-accent; /* Or primary, or a specific icon color */
+  @apply mx-2 h-5 w-5 text-accent; /* Icons in separator use accent color */
 }
