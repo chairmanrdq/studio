@@ -98,7 +98,7 @@ export default function TeamPage() {
                   alt={`Photo of ${member.name}`}
                   width={160}
                   height={160}
-                  className="rounded-full border-4 border-background shadow-md object-cover aspect-square"
+                  className="rounded-full border-[6px] border-background shadow-md object-cover aspect-square"
                   data-ai-hint={member.dataAiHint}
                 />
               </div>
