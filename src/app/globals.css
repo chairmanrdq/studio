@@ -12,6 +12,9 @@ body {
     --background: 210 60% 97%; /* Very light blue */
     --foreground: 215 25% 30%; /* Dark desaturated blue for text */
 
+    --gradient-start-color: 210 60% 97%; /* Current background - Very light blue */
+    --gradient-end-color: 0 0% 100%;   /* White, for a subtle fade to white */
+
     --card: 210 50% 99%; /* Almost white, slightly blueish */
     --card-foreground: 215 25% 30%; /* Dark text on cards */
 
@@ -57,9 +60,12 @@ body {
   }
 
   .dark {
-    /* Dark Tech Blue Theme (Original or a different dark variant if needed) */
+    /* Dark Tech Blue Theme */
     --background: 215 30% 12%; 
     --foreground: 215 15% 88%; 
+
+    --gradient-start-color: 215 30% 12%; /* Current background - Dark desaturated blue */
+    --gradient-end-color: 220 35% 8%;    /* Even darker, richer deep blue */
 
     --card: 215 30% 17%; 
     --card-foreground: 215 15% 88%;
@@ -108,7 +114,11 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-image: linear-gradient(to bottom, hsl(var(--gradient-start-color)), hsl(var(--gradient-end-color)));
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures gradient covers viewport even if content is short and scrolls */
+    min-height: 100vh; /* Ensures gradient covers full viewport height if content is short */
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
