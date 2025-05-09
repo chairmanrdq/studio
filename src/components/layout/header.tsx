@@ -27,7 +27,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="bg-background/95 sticky top-0 z-50 w-full border-b border-border/40 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+    <header className="bg-black sticky top-0 z-50 w-full border-b border-neutral-700 backdrop-blur supports-[backdrop-filter]:bg-black/60 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl sm:text-2xl font-bold text-primary hover:text-primary/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
           {SCHOLAR_NAME}
@@ -42,7 +42,9 @@ export default function Header() {
               asChild
               className={cn(
                 "text-sm font-medium transition-colors",
-                pathname === item.href ? "bg-accent/10 text-primary hover:bg-accent/20" : "text-foreground/70 hover:text-primary hover:bg-secondary"
+                pathname === item.href
+                  ? "bg-accent/10 text-primary hover:bg-accent/20"
+                  : "text-gray-300 hover:text-primary hover:bg-neutral-800"
               )}
             >
               <Link href={item.href}>
@@ -57,18 +59,18 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="Toggle menu">
+              <Button variant="ghost" size="icon" aria-label="Toggle menu" className="text-gray-300 hover:text-white focus:ring-gray-500">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-background p-0">
+            <SheetContent side="right" className="w-full max-w-xs bg-black p-0 text-gray-300">
               <div className="flex flex-col h-full">
-                <div className="p-6 flex justify-between items-center border-b">
+                <div className="p-6 flex justify-between items-center border-b border-neutral-700">
                     <Link href="/" className="text-lg font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                         {SCHOLAR_NAME}
                     </Link>
                     <SheetClose asChild>
-                        <Button variant="ghost" size="icon" aria-label="Close menu">
+                        <Button variant="ghost" size="icon" aria-label="Close menu" className="text-gray-300 hover:text-white focus:ring-gray-500">
                             <X className="h-6 w-6" />
                         </Button>
                     </SheetClose>
@@ -80,7 +82,9 @@ export default function Header() {
                         href={item.href}
                         className={cn(
                           "flex items-center space-x-3 text-md font-medium transition-colors rounded-md px-3 py-2",
-                          pathname === item.href ? "bg-accent/10 text-primary" : "text-foreground/80 hover:bg-secondary hover:text-primary"
+                          pathname === item.href
+                            ? "bg-accent/10 text-primary"
+                            : "text-gray-300 hover:bg-neutral-800 hover:text-primary"
                         )}
                       >
                         <item.icon className="h-5 w-5" />
