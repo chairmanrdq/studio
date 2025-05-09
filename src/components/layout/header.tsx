@@ -27,7 +27,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="bg-black sticky top-0 z-50 w-full border-b border-neutral-700 backdrop-blur supports-[backdrop-filter]:bg-black/60 shadow-sm">
+    <header className="bg-black sticky top-0 z-50 w-full border-b border-primary/30 backdrop-blur supports-[backdrop-filter]:bg-black/60 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="text-xl sm:text-2xl font-bold text-primary hover:text-primary/80 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
           {SCHOLAR_NAME}
@@ -65,7 +65,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-black p-0 text-gray-300">
               <div className="flex flex-col h-full">
-                <div className="p-6 flex justify-between items-center border-b border-neutral-700">
+                <div className="p-6 flex justify-between items-center border-b border-primary/30">
                     <Link href="/" className="text-lg font-bold text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                         {SCHOLAR_NAME}
                     </Link>
