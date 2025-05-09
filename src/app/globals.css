@@ -8,94 +8,94 @@ body {
 
 @layer base {
   :root {
-    --background: 30 50% 97%; /* Very Light Beige/Cream */
-    --foreground: 220 20% 25%; /* Dark Slate Blue/Gray */
+    --background: 0 0% 98%; /* Near White */
+    --foreground: 220 10% 20%; /* Very Dark Blue/Black */
 
     --card: 0 0% 100%; /* White */
-    --card-foreground: 220 20% 25%;
+    --card-foreground: 220 10% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 25%;
+    --popover-foreground: 220 10% 20%;
 
-    --primary: 215 45% 40%; /* Classic Collegiate Blue */
+    --primary: 205 80% 50%; /* Strong Tech Blue */
     --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 210 25% 94%; /* Light Cool Gray */
-    --secondary-foreground: 220 15% 40%; /* Darker Gray for text on secondary */
+    --secondary: 220 20% 94%; /* Light Cool Gray */
+    --secondary-foreground: 220 10% 35%; /* Darker Gray for text on secondary */
 
-    --muted: 210 25% 90%; /* Slightly darker Light Gray */
-    --muted-foreground: 210 15% 50%; /* Muted text color */
+    --muted: 220 20% 90%; /* Slightly darker Light Gray */
+    --muted-foreground: 220 10% 50%; /* Muted text color */
 
-    --accent: 35 65% 55%; /* Muted Gold/Ochre */
-    --accent-foreground: 0 0% 100%; /* White for contrast on gold */
+    --accent: 290 60% 55%; /* Desaturated Purple/Magenta for light theme */
+    --accent-foreground: 0 0% 100%; /* White for contrast */
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 85%; /* Light Gray Border */
-    --input: 210 25% 95%; /* Slightly off-white for inputs */
-    --ring: 215 45% 50%; /* Brighter primary for focus rings */
+    --border: 220 15% 88%; /* Light Gray Border */
+    --input: 220 20% 96%; /* Very Light Gray for inputs */
+    --ring: 205 80% 60%; /* Brighter primary for focus rings */
 
-    --chart-1: 215 45% 40%;  /* Primary */
-    --chart-2: 35 65% 55%;   /* Accent - Gold */
-    --chart-3: 160 40% 45%;  /* Muted Teal */
-    --chart-4: 0 40% 50%;    /* Muted Terracotta/Brick */
-    --chart-5: 210 30% 65%;  /* Lighter Slate Blue */
+    --chart-1: 205 80% 50%;  /* Primary Blue */
+    --chart-2: 290 60% 55%;   /* Accent Purple */
+    --chart-3: 170 60% 40%;  /* Teal/Cyan */
+    --chart-4: 350 70% 55%;    /* Bright Pinkish Red */
+    --chart-5: 50 80% 50%;  /* Bright Orange/Yellow */
     --radius: 0.5rem;
 
-    --sidebar-background: 210 30% 96%; /* Very light cool gray */
-    --sidebar-foreground: 220 20% 25%;
-    --sidebar-primary: 215 45% 40%; 
+    --sidebar-background: 220 25% 96%; /* Very light cool gray */
+    --sidebar-foreground: 220 10% 20%;
+    --sidebar-primary: 205 80% 50%; 
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 40% 90%; /* Light blue accent for hover */
-    --sidebar-accent-foreground: 215 45% 35%; /* Darker blue for active */
-    --sidebar-border: 210 20% 80%;
-    --sidebar-ring: 215 45% 50%;
+    --sidebar-accent: 220 20% 90%; /* Light gray accent for hover */
+    --sidebar-accent-foreground: 205 80% 45%; /* Darker blue for active */
+    --sidebar-border: 220 15% 85%;
+    --sidebar-ring: 205 80% 60%;
   }
 
   .dark {
-    --background: 220 15% 15%; /* Very Dark Blue/Charcoal */
-    --foreground: 210 20% 88%; /* Light Gray/Off-white for text */
+    --background: 220 25% 10%; /* Very Dark Blue */
+    --foreground: 210 30% 85%; /* Light Bluish Gray */
 
-    --card: 220 12% 20%; /* Slightly lighter Dark Gray for cards */
-    --card-foreground: 210 20% 88%;
+    --card: 220 20% 15%; /* Darker Blue-Gray for cards */
+    --card-foreground: 210 30% 85%;
 
-    --popover: 220 15% 12%; /* Even darker for popovers */
-    --popover-foreground: 210 20% 88%;
+    --popover: 220 20% 12%; /* Even darker for popovers */
+    --popover-foreground: 210 30% 85%;
 
-    --primary: 215 55% 60%; /* Collegiate Blue - visible on dark */
-    --primary-foreground: 0 0% 98%; /* Very Light/White */
+    --primary: 205 90% 55%; /* Vibrant Cyan-Blue - "Tech Blue" */
+    --primary-foreground: 210 20% 98%; /* Almost White */
 
-    --secondary: 220 10% 28%; /* Muted Dark Blue-Gray */
-    --secondary-foreground: 210 15% 75%; /* Lighter Gray for text on secondary */
+    --secondary: 220 15% 25%; /* Muted Dark Blue */
+    --secondary-foreground: 210 25% 70%; /* Lighter Gray for text on secondary */
 
-    --muted: 220 10% 25%; /* Darker Muted */
-    --muted-foreground: 210 15% 55%; /* Medium Gray for muted text */
+    --muted: 220 15% 20%; /* Darker Muted */
+    --muted-foreground: 210 20% 55%; /* Medium Gray for muted text */
 
-    --accent: 35 70% 65%; /* Brighter Gold/Ochre for dark theme */
-    --accent-foreground: 25 30% 15%; /* Dark brown/black for contrast on gold */
+    --accent: 290 70% 60%; /* Vibrant Purple/Magenta as accent */
+    --accent-foreground: 0 0% 100%; /* White for contrast on accent */
 
-    --destructive: 0 60% 55%; 
+    --destructive: 0 70% 55%; 
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 10% 30%; /* Subtle Border */
-    --input: 220 10% 27%; 
-    --ring: 215 55% 70%; /* Brighter blue for focus rings */
+    --border: 220 15% 28%; /* Subtle Dark Border */
+    --input: 220 15% 22%; 
+    --ring: 205 90% 65%; /* Brighter primary for focus rings */
 
-    --chart-1: 215 55% 60%;  /* Primary */
-    --chart-2: 35 70% 65%;   /* Accent - Gold */
-    --chart-3: 160 50% 55%;  /* Muted Teal - brighter */
-    --chart-4: 0 50% 60%;    /* Muted Terracotta - brighter */
-    --chart-5: 210 40% 70%;  /* Lighter Slate Blue - brighter */
+    --chart-1: 205 90% 55%;  /* Primary Blue */
+    --chart-2: 290 70% 60%;   /* Accent Purple */
+    --chart-3: 170 70% 45%;  /* Teal/Cyan */
+    --chart-4: 350 80% 60%;    /* Bright Pinkish Red */
+    --chart-5: 50 90% 55%;  /* Bright Orange/Yellow */
 
-    --sidebar-background: 220 15% 12%; /* Very Dark, slightly different from main bg */
-    --sidebar-foreground: 210 20% 85%;
-    --sidebar-primary: 215 55% 60%; 
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 220 10% 25%; /* Subtle dark accent for hover */
-    --sidebar-accent-foreground: 35 70% 70%; /* Brighter gold for active */
-    --sidebar-border: 220 10% 28%;
-    --sidebar-ring: 215 55% 70%;
+    --sidebar-background: 220 20% 12%; /* Very Dark, slightly different from main bg */
+    --sidebar-foreground: 210 30% 80%;
+    --sidebar-primary: 205 90% 55%; 
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 220 15% 25%; /* Subtle dark accent for hover */
+    --sidebar-accent-foreground: 290 70% 65%; /* Brighter accent for active */
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 205 90% 65%;
   }
 }
 
@@ -118,4 +118,18 @@ body {
      If a button component is used as a link, it will take button styles.
      If an <a> tag is used, it will take this accent color by default.
   */
+}
+
+/* Custom separator with icon */
+.separator-with-icon {
+  @apply flex items-center text-muted-foreground my-6;
+}
+
+.separator-with-icon::before,
+.separator-with-icon::after {
+  @apply content-[''] flex-grow border-t border-border;
+}
+
+.separator-with-icon svg {
+  @apply mx-2 h-5 w-5 text-accent; /* Or primary, or a specific icon color */
 }
