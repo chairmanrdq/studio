@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -43,8 +44,8 @@ export default function Header() {
               className={cn(
                 "text-sm font-medium transition-colors",
                 pathname === item.href
-                  ? "bg-accent/10 text-primary hover:bg-accent/20"
-                  : "text-primary hover:text-primary/80 hover:bg-secondary"
+                  ? "bg-accent/10 text-foreground hover:bg-accent/20"
+                  : "text-foreground hover:text-foreground/80 hover:bg-secondary"
               )}
             >
               <Link href={item.href}>
@@ -83,8 +84,8 @@ export default function Header() {
                         className={cn(
                           "flex items-center space-x-3 text-md font-medium transition-colors rounded-md px-3 py-2",
                           pathname === item.href
-                            ? "bg-accent/10 text-primary"
-                            : "text-primary hover:bg-secondary hover:text-primary/80"
+                            ? "bg-accent/10 text-foreground"
+                            : "text-foreground hover:bg-secondary hover:text-foreground/80"
                         )}
                       >
                         <item.icon className="h-5 w-5" />
