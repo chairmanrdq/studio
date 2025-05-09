@@ -11,8 +11,27 @@ export const metadata: Metadata = {
   description: 'Shared resources including software, datasets, presentations, and useful links from Dr. Eleanor Vance.', // Replace
 };
 
+// Define a more specific type for items used in ResourceCard
+interface GenericResourceItem {
+  id: string;
+  name: string;
+  description: string;
+  link: string; // Essential for the button's link
+  lastUpdated?: string;
+  size?: string;
+  format?: string;
+  event?: string;
+  icon?: React.ReactNode;
+  buttonText?: string;
+}
+
 // Mock Data - Replace with actual data
-const resourcesData = {
+const resourcesData: {
+  software: GenericResourceItem[];
+  datasets: GenericResourceItem[];
+  slides: GenericResourceItem[];
+  friendlyLinks: Array<{ id: string; name: string; url: string; category: string; icon: React.ReactNode; }>;
+} = {
   software: [
     { id: "s1", name: "NLP Toolkit v2.1", description: "A Python library for common NLP tasks, optimized for research and education. Includes modules for text preprocessing, feature extraction, and model evaluation.", link: "#github-nlp-toolkit", lastUpdated: "2024-05-01", icon: <Github className="mr-2 h-4 w-4"/>, buttonText: "View on GitHub" },
     { id: "s2", name: "EthiCheck: Bias Detection Suite", description: "A suite of tools for analyzing and mitigating various types of bias in language models and text data. Supports multiple fairness metrics.", link: "#gitlab-ethicheck", lastUpdated: "2023-11-15", icon: <Github className="mr-2 h-4 w-4"/>, buttonText: "View on GitLab" },
@@ -33,17 +52,23 @@ const resourcesData = {
   ]
 };
 
-const ResourceCard = ({item}: {item: any}) => (
+const ResourceCard = ({item, buttonClassName}: {item: GenericResourceItem, buttonClassName?: string}) => (
   <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 border-primary/10">
     <CardHeader>
       <CardTitle className="text-xl text-primary/90">{item.name}</CardTitle>
       {item.lastUpdated && <CardDescription>Last updated: {item.lastUpdated}</CardDescription>}
-      {item.size && <CardDescription>Size: {item.size} ({item.format})</CardDescription>}
+      {item.size && item.format && <CardDescription>Size: {item.size} ({item.format})</CardDescription>}
       {item.event && <CardDescription>Event: {item.event}</CardDescription>}
     </CardHeader>
     <CardContent>
       <p className="text-foreground/80 mb-4 leading-relaxed">{item.description}</p>
-      <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+      <Button 
+        asChild 
+        className={cn(
+          "bg-accent text-accent-foreground hover:bg-accent/90", // Default button style
+          buttonClassName // Override classes
+        )}
+      >
         <a href={item.link} target="_blank" rel="noopener noreferrer">
           {item.icon || <Download className="mr-2 h-4 w-4" />} {item.buttonText || "Access Resource"}
         </a>
@@ -59,7 +84,13 @@ export default function ResourcesPage() {
       <section id="software" aria-labelledby="software-title">
         <SectionTitle id="software-title">Software & Tools</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {resourcesData.software.map(item => <ResourceCard key={item.id} item={item} />)}
+          {resourcesData.software.map(item => (
+            <ResourceCard 
+              key={item.id} 
+              item={item} 
+              buttonClassName="bg-[hsl(var(--chart-4))] text-card-foreground hover:bg-[hsl(var(--chart-4))]/90" 
+            />
+          ))}
         </div>
       </section>
 
@@ -101,3 +132,4 @@ export default function ResourcesPage() {
     </div>
   );
 }
+
