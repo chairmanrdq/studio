@@ -8,105 +8,105 @@ body {
 
 @layer base {
   :root {
-    /* Peking University Red Theme - Light */
-    --background: 347 100% 97%; /* Very light pinkish white */
-    --foreground: 347 15% 20%; /* Dark reddish gray for text */
+    /* Dark Blue & Green Theme - Default (effectively "light" mode in CSS, but it's a dark theme) */
+    --background: 220 40% 12%; /* Deep Navy Blue */
+    --foreground: 210 20% 88%; /* Light Bluish Gray for text */
 
-    --gradient-start-color: 347 80% 95%; /* Lighter pinkish white for gradient top */
-    --gradient-end-color: 347 60% 98%;   /* Even lighter, almost white pink for gradient bottom */
+    --gradient-start-color: 220 40% 10%; /* Slightly darker Deep Navy Blue - top */
+    --gradient-end-color: 190 50% 15%;   /* Dark Tealish Blue - bottom */
 
-    --card: 347 100% 99%; /* Almost white, slightly warm red/pink */
-    --card-foreground: 347 15% 20%; /* Dark text on cards */
+    --card: 220 35% 18%; /* Dark Slate Blue */
+    --card-foreground: 210 20% 88%; /* Light Bluish Gray */
 
-    --popover: 347 100% 99%; /* Popover background - similar to card */
-    --popover-foreground: 347 15% 20%; /* Popover text */
+    --popover: 220 35% 16%; /* Slightly darker popover */
+    --popover-foreground: 210 20% 88%;
 
-    --primary: 347 100% 39%; /* Peking University Red (Hex: #C9002C) */
-    --primary-foreground: 347 100% 95%; /* Very light, almost white/pink for text on primary */
+    --primary: 205 70% 50%; /* Bright Electric Blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 347 30% 90%; /* Light pinkish-gray for secondary elements */
-    --secondary-foreground: 347 10% 40%; /* Medium-dark reddish-gray text on secondary */
+    --secondary: 215 30% 25%; /* Muted Dark Blue */
+    --secondary-foreground: 210 15% 75%; /* Light Gray-Blue */
 
-    --muted: 347 20% 94%; /* Lighter/more subtle pinkish-gray for muted elements */
-    --muted-foreground: 347 10% 55%; /* Medium reddish-gray for muted text */
+    --muted: 215 25% 20%; /* Darker Muted Blue */
+    --muted-foreground: 210 15% 60%; /* Medium Gray-Blue */
 
-    --accent: 350 100% 55%; /* Brighter, lighter red/pinkish-red for accents (Hex: #FF1A4D) */
-    --accent-foreground: 0 0% 98%; /* Very light text on accent */
+    --accent: 150 65% 50%; /* Vibrant Green */
+    --accent-foreground: 0 0% 100%; /* White for text on accent */
 
-    --destructive: 0 84% 60%; /* Standard vivid red for errors */
-    --destructive-foreground: 0 0% 98%; /* White text on destructive */
+    --destructive: 0 70% 55%; /* Standard vivid red for errors */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
-    --border: 347 30% 85%; /* Subtle warm reddish border */
-    --input: 347 50% 95%; /* Input field background - light warm pink */
-    --ring: 347 100% 50%; /* Brighter red for focus rings, related to Accent */
+    --border: 215 20% 30%; /* Subtle Dark Blue Border */
+    --input: 215 30% 22%; /* Input field background - dark blue */
+    --ring: 150 65% 55%; /* Green for focus rings */
 
-    --chart-1: 350 100% 55%;  /* Accent Red */
-    --chart-2: 15 100% 50%;  /* Orange */
-    --chart-3: 330 80% 60%;  /* Pink */
-    --chart-4: 347 60% 45%;  /* Darker Primary */
-    --chart-5: 0 0% 60%;  /* Medium Gray */
+    --chart-1: 150 65% 50%;  /* Accent Green */
+    --chart-2: 205 70% 50%;  /* Primary Blue */
+    --chart-3: 170 60% 45%;  /* Teal */
+    --chart-4: 130 50% 60%;  /* Lighter Green */
+    --chart-5: 210 10% 60%;  /* Medium Gray-Blue */
     
     --radius: 0.5rem;
 
-    /* Sidebar for Peking University Red theme - Light */
-    --sidebar-background: 347 40% 94%; /* Light warm gray/pink, slightly distinct from main bg */
-    --sidebar-foreground: 347 15% 25%; /* Dark reddish gray text for light sidebar */
-    --sidebar-primary: 350 100% 55%; /* Accent Red for active items */
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 347 60% 88%; /* Lighter pink accent for hover on sidebar items */
-    --sidebar-accent-foreground: 350 90% 50%; /* Active/hover text color - darker accent red */
-    --sidebar-border: 347 20% 80%;
-    --sidebar-ring: 347 100% 65%;
+    /* Sidebar for Dark Blue & Green theme */
+    --sidebar-background: 220 30% 10%; /* Very Dark Blue for sidebar */
+    --sidebar-foreground: 210 20% 80%; /* Light Bluish Gray */
+    --sidebar-primary: 150 65% 50%; /* Accent Green for active items */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 215 30% 20%; /* Muted Dark Blue for hover on sidebar items */
+    --sidebar-accent-foreground: 150 60% 65%; /* Lighter Green for active/hover text */
+    --sidebar-border: 215 20% 25%; /* Dark Blue border for sidebar */
+    --sidebar-ring: 150 65% 60%; /* Green ring for sidebar */
   }
 
   .dark {
-    /* Peking University Red Theme - Dark */
-    --background: 347 15% 12%; /* Very dark reddish gray (Hex: #26161A) */
-    --foreground: 347 30% 88%; /* Light warm off-white/pink text */
+    /* Dark Blue & Green Theme - Dark variation */
+    --background: 220 50% 8%; /* Very Dark Indigo */
+    --foreground: 210 25% 92%; /* Brighter Off-White/Bluish */
 
-    --gradient-start-color: 347 20% 18%; /* Slightly lighter dark red (Hex: #382327) */
-    --gradient-end-color: 347 20% 8%;    /* Even darker, almost black-red (Hex: #1C1214) */
+    --gradient-start-color: 220 50% 6%;    /* Even darker Indigo - top */
+    --gradient-end-color: 190 60% 10%;   /* Darker Tealish Indigo - bottom */
 
-    --card: 347 15% 17%; /* Dark reddish gray card (Hex: #302125) */
-    --card-foreground: 347 30% 88%;
+    --card: 220 40% 14%; /* Darker Slate Blue */
+    --card-foreground: 210 25% 92%;
 
-    --popover: 347 15% 17%; 
-    --popover-foreground: 347 30% 88%;
+    --popover: 220 40% 12%; 
+    --popover-foreground: 210 25% 92%;
 
-    --primary: 347 100% 60%; /* Lighter, vibrant red for dark mode (Hex: #FF335A) */
-    --primary-foreground: 347 100% 10%; /* Very dark red for text on primary */
+    --primary: 205 75% 58%; /* Slightly Brighter Electric Blue */
+    --primary-foreground: 0 0% 100%; 
 
-    --secondary: 347 10% 25%; /* Darker warm gray (Hex: #42383B) */
-    --secondary-foreground: 347 5% 75%;
+    --secondary: 215 35% 22%; /* Darker Muted Blue */
+    --secondary-foreground: 210 20% 80%;
 
-    --muted: 347 10% 20%; /* Very dark, subtle warm gray (Hex: #362D2F) */
-    --muted-foreground: 347 5% 60%;
+    --muted: 215 30% 18%; /* Even Darker Muted Blue */
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 350 100% 70%; /* Vibrant, lighter red/pink for accent on dark (Hex: #FF6685) */
-    --accent-foreground: 347 100% 5%; /* Very dark text on accent */
+    --accent: 150 70% 55%; /* Brighter Vibrant Green */
+    --accent-foreground: 0 0% 100%; 
 
-    --destructive: 0 70% 65%; /* Brighter red for dark mode (Hex: #F55757) */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 75% 60%; /* Brighter red for dark mode */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 347 10% 22%; /* Dark reddish border (Hex: #3B3235) */
-    --input: 347 10% 28%; /* Dark reddish input background (Hex: #4A3E42) */
-    --ring: 347 100% 65%; /* Bright red ring (Hex: #FF4D71) */
+    --border: 215 25% 28%; /* Darker Blue Border */
+    --input: 215 35% 20%; /* Darker Input Background */
+    --ring: 150 70% 60%; 
     
-    --chart-1: 350 100% 70%; /* Accent Red - Dark mode */
-    --chart-2: 15 100% 65%;  /* Lighter Orange */
-    --chart-3: 330 80% 70%;  /* Lighter Pink */
-    --chart-4: 347 70% 55%;  /* Lighter Darker Primary */
-    --chart-5: 0 0% 75%;  /* Light Gray */
+    --chart-1: 150 70% 55%;  /* Accent Green - Dark mode */
+    --chart-2: 205 75% 58%;  /* Primary Blue - Dark mode */
+    --chart-3: 170 65% 50%;  /* Brighter Teal */
+    --chart-4: 130 55% 65%;  /* Brighter Light Green */
+    --chart-5: 210 15% 70%;  /* Lighter Gray-Blue */
 
-    /* Sidebar for Peking University Red theme - Dark */
-    --sidebar-background: 347 15% 9%; /* Very dark reddish gray for sidebar (Hex: #1F1517) */
-    --sidebar-foreground: 347 20% 85%; 
-    --sidebar-primary: 350 100% 70%; /* Accent Red for active items */
-    --sidebar-primary-foreground: 347 100% 5%;
-    --sidebar-accent: 347 10% 20%; /* Darker accent for hover on sidebar items */
-    --sidebar-accent-foreground: 350 100% 75%; /* Active/hover text color - brighter red */
-    --sidebar-border: 347 10% 25%;
-    --sidebar-ring: 347 100% 70%;
+    /* Sidebar for Dark Blue & Green theme - Dark variation */
+    --sidebar-background: 220 40% 6%; /* Almost Black-Blue for sidebar */
+    --sidebar-foreground: 210 20% 88%; 
+    --sidebar-primary: 150 70% 55%; /* Accent Green for active items */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 30% 15%; /* Darker accent for hover on sidebar items */
+    --sidebar-accent-foreground: 150 65% 70%; /* Brighter Lighter Green for active/hover text */
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 150 70% 65%;
   }
 }
 
@@ -145,4 +145,3 @@ body {
 .separator-with-icon svg {
   @apply mx-2 h-5 w-5 text-accent; /* Icons in separator use accent color */
 }
-
