@@ -65,7 +65,7 @@ const ResourceCard = ({item, buttonClassName}: {item: GenericResourceItem, butto
       <Button 
         asChild 
         className={cn(
-          "bg-accent text-accent-foreground hover:bg-accent/90", // Default button style
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80", // Changed default to gray
           buttonClassName // Override classes
         )}
       >
@@ -88,7 +88,7 @@ export default function ResourcesPage() {
             <ResourceCard 
               key={item.id} 
               item={item} 
-              buttonClassName="bg-[hsl(var(--chart-3))] text-primary-foreground hover:bg-[hsl(var(--chart-3))]/90" 
+              // buttonClassName prop removed to use the new gray default style
             />
           ))}
         </div>
@@ -132,4 +132,3 @@ export default function ResourcesPage() {
     </div>
   );
 }
-
