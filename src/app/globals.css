@@ -8,104 +8,105 @@ body {
 
 @layer base {
   :root {
-    /* Light Tech Blue Theme */
-    --background: 210 60% 97%; /* Very light blue */
-    --foreground: 215 25% 30%; /* Dark desaturated blue for text */
+    /* Tsinghua Purple Theme - Light */
+    --background: 283 20% 97%; /* Very light lavender */
+    --foreground: 283 15% 20%; /* Dark purple-ish gray for text */
 
-    --gradient-start-color: 210 80% 92%; /* More saturated and slightly darker light blue for stronger contrast */
-    --gradient-end-color: 210 20% 99%;   /* Even lighter, almost pure white-blue, for stronger contrast */
+    --gradient-start-color: 283 30% 92%; /* Lighter lavender for gradient top */
+    --gradient-end-color: 283 10% 98%;   /* Even lighter, almost white lavender for gradient bottom */
 
-    --card: 210 50% 99%; /* Almost white, slightly blueish */
-    --card-foreground: 215 25% 30%; /* Dark text on cards */
+    --card: 283 25% 99%; /* Almost white, slightly lavender */
+    --card-foreground: 283 15% 20%; /* Dark text on cards */
 
-    --popover: 210 50% 99%; /* Popover background - similar to card */
-    --popover-foreground: 215 25% 30%; /* Popover text */
+    --popover: 283 25% 99%; /* Popover background - similar to card */
+    --popover-foreground: 283 15% 20%; /* Popover text */
 
-    --primary: 210 90% 50%; /* Vibrant Tech Blue */
-    --primary-foreground: 210 30% 98%; /* Very light, almost white for text on primary */
+    --primary: 283 72% 26%; /* Tsinghua Purple (Hex: #511472) */
+    --primary-foreground: 283 10% 95%; /* Very light, almost white for text on primary */
 
-    --secondary: 210 40% 90%; /* Light grey-blue for secondary elements */
-    --secondary-foreground: 215 20% 45%; /* Medium-dark grey text on secondary */
+    --secondary: 283 25% 90%; /* Light purple-gray for secondary elements */
+    --secondary-foreground: 283 10% 40%; /* Medium-dark purple-gray text on secondary */
 
-    --muted: 210 30% 94%; /* Lighter/more subtle grey-blue for muted elements */
-    --muted-foreground: 215 15% 55%; /* Medium grey for muted text */
+    --muted: 283 15% 94%; /* Lighter/more subtle purple-gray for muted elements */
+    --muted-foreground: 283 10% 55%; /* Medium purple-gray for muted text */
 
-    --accent: 200 80% 55%; /* Cyan-ish blue for accents (e.g., links) */
-    --accent-foreground: 210 30% 98%; /* Very light text on accent */
+    --accent: 283 60% 55%; /* Brighter, lighter purple for accents (Hex: #A95DCC) */
+    --accent-foreground: 283 10% 98%; /* Very light text on accent */
 
-    --destructive: 0 70% 55%; /* Red for errors, good contrast on light bg */
+    --destructive: 0 70% 55%; /* Red for errors */
     --destructive-foreground: 0 0% 98%; /* White text on destructive */
 
-    --border: 210 30% 85%; /* Subtle border color */
-    --input: 210 40% 95%; /* Input field background - light */
-    --ring: 210 90% 60%; /* Brighter blue for focus rings */
+    --border: 283 20% 85%; /* Subtle purple-ish border */
+    --input: 283 20% 95%; /* Input field background - light lavender */
+    --ring: 283 60% 65%; /* Brighter purple for focus rings, related to Accent */
 
-    --chart-1: 210 90% 50%;  /* Primary - Tech Blue */
-    --chart-2: 200 80% 55%;  /* Accent - Cyan-ish Blue */
-    --chart-3: 330 80% 65%;  /* Bright Pink/Magenta (adjusted for light theme) */
-    --chart-4: 45 95% 60%;   /* Bright Yellow/Orange (adjusted for light theme) */
-    --chart-5: 270 75% 70%;  /* Bright Purple (adjusted for light theme) */
+    --chart-1: 283 60% 55%;  /* Accent Purple */
+    --chart-2: 270 50% 50%;  /* Distinct Purple */
+    --chart-3: 330 65% 60%;  /* Pink/Magenta */
+    --chart-4: 190 60% 50%;  /* Teal/Cyan */
+    --chart-5: 283 40% 35%;  /* Darker, desaturated primary variant */
     
     --radius: 0.5rem;
 
-    /* Sidebar for light tech blue theme */
-    --sidebar-background: 210 50% 94%; /* Light blue, slightly distinct from main bg */
-    --sidebar-foreground: 215 25% 35%; /* Dark text for light sidebar */
-    --sidebar-primary: 210 90% 50%; /* Tech Blue for active items */
-    --sidebar-primary-foreground: 210 30% 98%;
-    --sidebar-accent: 210 40% 88%; /* Lighter accent for hover on sidebar items */
-    --sidebar-accent-foreground: 210 90% 45%; /* Active/hover text color - darker blue */
-    --sidebar-border: 210 30% 80%;
-    --sidebar-ring: 210 90% 60%;
+    /* Sidebar for Tsinghua Purple theme - Light */
+    --sidebar-background: 283 20% 94%; /* Light lavender, slightly distinct from main bg */
+    --sidebar-foreground: 283 15% 25%; /* Dark purple-ish gray text for light sidebar */
+    --sidebar-primary: 283 60% 55%; /* Accent Purple for active items */
+    --sidebar-primary-foreground: 283 10% 98%;
+    --sidebar-accent: 283 15% 88%; /* Lighter accent for hover on sidebar items */
+    --sidebar-accent-foreground: 283 60% 50%; /* Active/hover text color - darker accent purple */
+    --sidebar-border: 283 15% 80%;
+    --sidebar-ring: 283 60% 65%;
   }
 
   .dark {
-    /* Dark Tech Blue Theme */
-    --background: 215 30% 12%; 
-    --foreground: 215 15% 88%; 
+    /* Tsinghua Purple Theme - Dark */
+    --background: 283 15% 12%; /* Very dark purple (Hex: #211A25) */
+    --foreground: 283 10% 88%; /* Light lavender/off-white text */
 
-    --gradient-start-color: 215 40% 18%; /* Slightly more saturated and lighter dark blue for stronger contrast */
-    --gradient-end-color: 220 45% 3%;    /* Even darker, almost black-blue for stronger contrast */
+    --gradient-start-color: 283 20% 18%; /* Slightly lighter dark purple (Hex: #2F233A) */
+    --gradient-end-color: 283 20% 8%;    /* Even darker, almost black-purple (Hex: #17111B) */
 
-    --card: 215 30% 17%; 
-    --card-foreground: 215 15% 88%;
+    --card: 283 15% 17%; /* Dark purple card (Hex: #2A2230) */
+    --card-foreground: 283 10% 88%;
 
-    --popover: 215 30% 17%; 
-    --popover-foreground: 215 15% 88%;
+    --popover: 283 15% 17%; 
+    --popover-foreground: 283 10% 88%;
 
-    --primary: 210 90% 55%; 
-    --primary-foreground: 210 20% 98%;
+    --primary: 283 65% 60%; /* Lighter, vibrant purple for dark mode (Hex: #C073E0) */
+    --primary-foreground: 283 10% 95%;
 
-    --secondary: 215 25% 25%; 
-    --secondary-foreground: 215 15% 75%;
+    --secondary: 283 10% 25%; /* Darker purple-gray (Hex: #39333E) */
+    --secondary-foreground: 283 5% 75%;
 
-    --muted: 215 20% 20%; 
-    --muted-foreground: 215 10% 60%;
+    --muted: 283 10% 20%; /* Very dark, subtle purple-gray (Hex: #2E2833) */
+    --muted-foreground: 283 5% 60%;
 
-    --accent: 180 80% 50%; 
-    --accent-foreground: 210 20% 98%;
+    --accent: 283 70% 70%; /* Vibrant, lighter purple for accent on dark (Hex: #DB99FF) */
+    --accent-foreground: 283 10% 98%;
 
-    --destructive: 0 70% 60%; 
+    --destructive: 0 65% 58%; /* Brighter red for dark mode (Hex: #E85252) */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 20% 22%; 
-    --input: 215 25% 28%; 
-    --ring: 210 90% 65%; 
+    --border: 283 10% 22%; /* Dark purple border (Hex: #332C38) */
+    --input: 283 10% 28%; /* Dark purple input background (Hex: #3F3747) */
+    --ring: 283 70% 75%; /* Bright purple ring (Hex: #E5ADFF) */
     
-    --chart-1: 210 90% 60%;
-    --chart-2: 180 80% 55%;
-    --chart-3: 330 85% 70%;
-    --chart-4: 45 100% 65%;
-    --chart-5: 270 80% 75%;
+    --chart-1: 283 70% 70%; /* Accent Purple - Dark mode */
+    --chart-2: 270 60% 65%;
+    --chart-3: 330 65% 65%;
+    --chart-4: 190 55% 60%;
+    --chart-5: 283 45% 45%;
 
-    --sidebar-background: 215 35% 9%; 
-    --sidebar-foreground: 215 15% 85%; 
-    --sidebar-primary: 210 90% 60%; 
-    --sidebar-primary-foreground: 210 20% 98%;
-    --sidebar-accent: 215 25% 20%; 
-    --sidebar-accent-foreground: 210 90% 65%; 
-    --sidebar-border: 215 20% 25%;
-    --sidebar-ring: 210 90% 65%;
+    /* Sidebar for Tsinghua Purple theme - Dark */
+    --sidebar-background: 283 15% 9%; /* Very dark purple for sidebar (Hex: #1A151D) */
+    --sidebar-foreground: 283 10% 85%; 
+    --sidebar-primary: 283 70% 70%; /* Accent Purple for active items */
+    --sidebar-primary-foreground: 283 10% 98%;
+    --sidebar-accent: 283 10% 20%; /* Darker accent for hover on sidebar items */
+    --sidebar-accent-foreground: 283 70% 75%; /* Active/hover text color - brighter purple */
+    --sidebar-border: 283 10% 25%;
+    --sidebar-ring: 283 70% 75%;
   }
 }
 
@@ -144,5 +145,3 @@ body {
 .separator-with-icon svg {
   @apply mx-2 h-5 w-5 text-accent; /* Icons in separator use accent color */
 }
-
-
