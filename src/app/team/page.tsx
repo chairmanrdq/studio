@@ -96,8 +96,8 @@ export default function TeamPage() {
                 <Image
                   src={member.avatarUrl}
                   alt={`Photo of ${member.name}`}
-                  width={160}
-                  height={160}
+                  width={180}
+                  height={180}
                   className="rounded-full border-[6px] border-background shadow-md object-cover aspect-square"
                   data-ai-hint={member.dataAiHint}
                 />
